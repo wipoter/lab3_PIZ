@@ -1,0 +1,90 @@
+.button_start{
+    position: relative;
+    left: 95px;
+}
+
+.button_restart{
+    position: relative;
+    left: 90px;
+}
+
+label{
+    color: white;
+}
+
+b{
+    color: white;
+}
+
+input.radio {width: auto;}
+
+input{
+    width: 250px;
+}
+
+p{
+    position: relative;
+    left: 100px;
+}
+
+body{
+    background: deepskyblue;
+}
+.number {
+    position: relative;
+    height: 0;
+    width: 0;
+    padding-left: 2px;
+}
+
+.letters {
+    position: absolute;
+    padding-top: 100%;
+    right: 5px;
+    top: -15px;
+}
+
+.white {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: bisque;
+}
+
+.black {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: saddlebrown;
+    color: white;
+}
+
+.secondT {
+    border-collapse: collapse;
+    position: relative;
+    width: 800px;
+    height: 800px;
+    border-right-width: 10px;
+}
+
+TD, TH {
+    position: relative;
+    padding: 0;
+    border-bottom: 0;
+    border-top: 0;
+    width: 100px;
+    height: 100px;
+}
+tr{
+    height: 100px;
+}
+
+img {
+    position: center;
+    width: 100px;
+    height: 100px;
+}
+
+.links {
+    font-size: 20px;
+}

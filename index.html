@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess 21</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <script></script>
+</head>
+<body onload=createDiagram()>
+<table class="mainT">
+    <tr>
+        <td class="first">
+            <form action="index2.html" method="get">
+                <label><b>Login</b></label>
+                <input name="Name" id="Name" type="text" pattern="[a-zA-Z0-9]+" minlength="3">
+                <label><b>Password</b></label>
+                <input name="Pas" id="Pas" type="password" pattern="[a-zA-Z0-9]+" minlength="8">
+                <br>
+                <label><b>Sex</b></label>
+                <div class="SexR">
+                    <input type="radio" class="radio" name="Sex" value="Male" id="Male"/>
+                    <label for="Male">Male</label>
+                    <input type="radio" class="radio" name="Sex" value="Female" id="Female"/>
+                    <label for="Female">Female</label>
+                </div>
+                <br>
+                <select id="Country" name="Country">
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Grate Britain">Grate Britain</option>
+                    <option value="USA">USA</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Italy">Italy</option>
+                </select> <br> <br>
+                <textarea name="FullText" id="FullText"></textarea>
+                <br> <br>
+                <button type="submit" value="Submit">Submit</button>
+            </form>
+            <br> <br>
+            <button class="button_start" onclick=startTimer()><strong>Start</strong></button>
+
+            <div class="counter">
+                <p id="time" class="time">05:00</p>
+                <button class="button_restart" onclick=restartTimer()><strong>Restart</strong></button>
+                <script defer src="timer.js"></script>
+            </div>
+        </td>
+        <td>
+        <table class="secondT">
+            <tr>
+                <td>
+                    <div class="white">
+                        <div class="number">1</div>
+                        <div  class="image"><img src="image/kingW.png" alt="White King" name = "KingW" class="chess_figure"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="black">
+                        <div class="number">2</div>
+                        <div  class="image"><img src="image/PawnsW.png" alt="White Pawn" name = "PawnW" class="chess_figure"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div  class="image"><img src="image/PawnsW.png" alt="White Pawns" name = "PawnW" class="chess_figure"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black">
+                        <div class="image"><img src="image/RookW.png" alt="White Rook" name = "RookW" class="chess_figure"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black">
+                        <div  class="image"><img src="image/PawnsW.png" alt="White Pawns" name = "PawnW" class="chess_figure"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="image"><img src="image/PawnsW.png" alt="White Pawns" name = "PawnW" class="chess_figure"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="white">
+                        <div class="number">3</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="image"><img src="image/PawnsW.png" alt="White Pawns" name = "PawnW" class="chess_figure"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black">
+                        <div class="image"><img src="image/BishopB.png" alt="Black bishop" name = "BishopB" class="chess_figure"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="black">
+                        <div class="number">4</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="white">
+                            <div class="image"><img src="image/PawnsW.png" alt="White Pawns" name = "PawnW" class="chess_figure"></div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="white">
+                        <div class="number">5</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="black">
+                        <div class="number">6</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="white">
+                            <div class="image"><img src="image/PawnsB.png" alt="Black Pawns" name = "PawnB" class="chess_figure"></div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="image"><img src="image/PawnsB.png" alt="Black Pawns" name = "PawnB" class="chess_figure"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="image"><img src="image/BishopW.png" alt="White Bishop" name = "BishopW" class="chess_figure"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="white">
+                        <div class="number">7</div>
+                        <div class="image">
+                            <img src="image/PawnsB.png" alt="Black Pawns" name = "PawnB" class="chess_figure"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="image"><img src="image/PawnsB.png" alt="Black Pawns" name = "PawnB" class="chess_figure"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black"></div>
+                </td>
+                <td>
+                    <div class="white"></div>
+                </td>
+                <td>
+                    <div class="black">
+                        <div class="image"><img src="image/RookW.png" alt="White Rook" name = "RookW" class="chess_figure"></div>
+                    </div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="black">
+                        <div class="number">8</div>
+                        <div class="letters">h</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="letters">g</div>
+                        <div class="image">
+                            <img src="image/KingB.png" alt="Black King" name = "KingB" class="chess_figure">
+                        </div>
+
+
+                    </div>
+                </td>
+                <td>
+                    <div class="black">
+                        <div class="letters">f</div>
+                        <div class="image">
+                            <img src="image/RookB.png" alt="Black Rook" name = "RookB" class="chess_figure">
+                        </div>
+
+
+                    </div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="letters">e</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black">
+                        <div class="letters">d</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="letters">c</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="black">
+                        <div class="letters">b</div>
+                        <div class="image">
+                            <img src="image/RookB.png" alt="Black Rook" name = "RookB" class="chess_figure">
+                        </div>
+
+
+                    </div>
+                </td>
+                <td>
+                    <div class="white">
+                        <div class="letters">a</div>
+                        <div class="image">
+                            <img src="image/BishopB.png" alt="Black bishop" name="BishopB" class="chess_figure">
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </td>
+        <td>
+            <div class="container">
+                <canvas id="myChart" width="1000" height="500">Your browser does not support the canvas element.</canvas>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div class="links">
+    <a href="https://www.chess.com/puzzles/problem/109540">Link to Puzzle</a>
+    <br>
+    <a href="https://www.chess.com/learn-how-to-play-chess">Rules</a>
+</div>
+
+
+<script defer src="chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</body>
+</html>

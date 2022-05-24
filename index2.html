@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>data</title>
+</head>
+<body>
+
+<textarea id="Data"></textarea>
+
+<script>
+    let tmp = window.location.search;
+    let param = new URLSearchParams(tmp);
+    console.log('Name: ' + param.get("Name"));
+    console.log('Password: ' + param.get("Pas"));
+    console.log('Sex: ' + param.get("Sex"));
+    console.log('Country: ' + param.get("Country"));
+    console.log('Full Text: ' + param.get("FullText"));
+    var Data = ('Name: ' + param.get("Name") + '\n' + 'Password: ' + param.get("Pas") + '\n' +
+        'Sex: ' + param.get("Sex") + '\n' + 'Country: ' + param.get("Country") + '\n' +
+        'Full Text: ' + param.get("FullText"));
+     document.getElementById("Data").value = Data;
+
+    if( param.get("Name").length < 1 || param.get("Pas").length < 1 || param.get("Sex").length < 1)
+    {
+        alert('Please fill all fields!')
+    }
+    else if(param.get("Name").length < 5)
+    {
+        alert('Not a valid number')
+    }
+</script>
+
+</body>
+</html>
